@@ -8,7 +8,7 @@ import Product from "../components/Product";
 import { Helmet } from "react-helmet-async";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero"
 
 
 const reducer = (state, action) => {
@@ -38,7 +38,7 @@ const HomeScreen = () => {
 
       dispatch({ type: "FETCH_REQUEST" });
       try {
-        const result = await axios.get("/api/products");
+        const result = await axios.get("https://daniels-eccomerce-store.herokuapp.com/api/products");
         dispatch({ type: "FETCH_SUCCESS", payload: result.data });
       } catch (err) {
         dispatch({ type: "FETCH_FAIL", payload: err.message });

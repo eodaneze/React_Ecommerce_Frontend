@@ -1,6 +1,6 @@
 {
   "name": "my_app",
-  "proxy": "https://daniels-eccomerce-store.herokuapp.com/",
+  "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
